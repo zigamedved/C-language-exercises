@@ -25,7 +25,7 @@ long logaritem(long long stevilo){
             stevilo=stevilo/10;
             stevec++;
             vsota=0;
-    }
+    } 
     return rezultat;
 }
 
