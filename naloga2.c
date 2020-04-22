@@ -31,9 +31,9 @@ long logaritem(long long stevilo){
 
 long goku(long cifra){
     
-    //printf(" NMORS VERJET %ld\n",cifra);
+    //printf("%ld\n",cifra);
     long double c = (long double)cifra;
-    //printf(" PEJT U KURAC %Lf\n",c);
+    //printf("%Lf\n",c);
     long res=0;
     while(c>1){
         c/=2;
@@ -72,16 +72,16 @@ int main(){
         ch=getchar();
     }
     
-    //printf("KAKSN OVERFLOW??? %ld\n",cifra);
-    long kua = logaritem(cifra);
+    //printf("OVERFLOW? %ld\n",cifra);
+    long num = logaritem(cifra);
     //printf("Stevilo je: %ld\n",kua);
-    long lmao = goku(kua);
+    long curr = goku(num);
     
     
     if(lmao==0){
         putchar('0');
     }else
-        printej(lmao);
+        printej(curr);
     
     
     
